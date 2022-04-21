@@ -1,6 +1,7 @@
 def environment = "${params.environment}"
 def test_file = "${params.test_file}"
 pipeline {
+    agent any
     stages {
         stage('Hello World!') {
             steps {
