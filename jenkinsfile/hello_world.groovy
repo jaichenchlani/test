@@ -15,10 +15,7 @@ pipeline {
         }
         stage('Print the contents of the Test File..') {
             steps {
-                sh script:```
-                #!/bin/bash
-                cat $test_file
-                ```
+                sh "cat ${test_file}"
             }
         }
     }
